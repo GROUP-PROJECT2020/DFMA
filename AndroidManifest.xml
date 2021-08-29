@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dfma_app_656995">
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cowicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <activity android:name="com.example.dfma_app_656995.MainActivity">
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.SelectEventActivity" >
+    </activity>
+        <activity android:name="com.example.dfma_app_656995.About" >
+        </activity>
+    <activity android:name="com.example.dfma_app_656995.CowRecordsActivity">
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.MilkRecordsActivity">
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.HealthRecordsActivity">
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.ViewRecordsActivity" >
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.ViewCowActivity" >
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.ViewMilkActivity" >
+    </activity>
+    <activity android:name="com.example.dfma_app_656995.ViewHealthActivity" >
+    </activity>
+        <activity android:name="com.example.dfma_app_656995.AddAlarm">
+        </activity>
+        <activity android:name="com.example.dfma_app_656995.AlarmRecordsActivity">
+        </activity>
+        <activity android:name="com.example.dfma_app_656995.DatePickerActivity" >
+    </activity>
+
+        <activity android:name=".AlarmNotification"
+            android:label="Alarm notification" />
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+        <receiver android:name=".BootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+</application>
+
+</manifest>

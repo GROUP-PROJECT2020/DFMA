@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="8sp"
+        android:background="@color/inverted"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="175dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/view" />
+
+    <TextView
+        android:id="@+id/select_record_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/light"
+        android:layout_marginTop="10dp"
+        android:text="@string/select"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/edit_button"
+            android:layout_gravity="center"
+            android:layout_height="90dp"
+            android:background="@color/light"
+            android:id="@+id/view_cow_bt"
+            android:drawableTop="@drawable/drawable_cow"
+            android:onClick="viewCowOnButtonClick"
+            android:text="@string/view_cows"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/hbarblue" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/edit_button"
+            android:layout_gravity="center"
+            android:background="@color/light"
+            android:id="@+id/view_milk_bt"
+            android:drawableTop="@drawable/drawable_milk"
+            android:onClick="viewMilkOnButtonClick"
+            android:text="@string/view_milk"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/hbarblue" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/edit_button"
+            android:layout_gravity="center"
+            android:background="@color/light"
+            android:id="@+id/view_health_bt"
+            android:drawableTop="@drawable/drawable_health"
+            android:onClick="viewHealthOnButtonClick"
+            android:text="@string/view_health"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hbarblue" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:padding="8sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/edit_button"
+            android:layout_gravity="center"
+            android:background="@color/light"
+            android:id="@+id/remind_health"
+            android:drawableTop="@drawable/drawable_reminder"
+            android:text="@string/reminder_view"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="214dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/hbarblue" />
+
+</LinearLayout>

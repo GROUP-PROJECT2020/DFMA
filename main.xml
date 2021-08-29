@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:paddingTop="4sp"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/white">
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="fill_parent"
+      android:background="@color/inverted"
+      android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        style="@style/widget"
+        android:id="@+id/add_alarm"
+        android:drawableTop="@drawable/notification3"
+        android:background="@color/inverted"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_alarm"
+        android:textColor="@color/light"
+        android:onClick="onAddAlarmClick" />
+  </LinearLayout>
+
+  <androidx.viewpager.widget.ViewPager
+      android:id="@+id/viewReminderPage"
+      android:layout_width="match_parent"
+      android:layout_height="212dp"
+      android:layout_marginTop="10dp"
+      android:background="@android:color/background_dark" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:id="@+id/layout"
+      android:padding="8sp"
+      android:layout_below="@+id/viewMilkPage"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+    <Button
+        style="@style/edit_button"
+        android:id="@+id/home"
+        android:drawableTop="@drawable/drawable_welcome"
+        android:background="@color/light"
+        android:text="@string/home"
+        android:textColor="@color/inverted" />
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/select_record_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"
+      android:text="@string/reminder_records"
+      android:textSize="20dp"
+      android:textStyle="bold"/>
+
+  <ListView
+    style="@style/widget"
+    android:id="@+id/alarm_list" />
+
+</LinearLayout>
+

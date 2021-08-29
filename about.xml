@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:padding="4dip"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:padding="8sp"
+      android:layout_marginTop="60dp"
+      android:background="@color/inverted"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+  <ImageView
+      android:layout_width="214dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginLeft="40dp"
+      android:src="@drawable/developer"
+      android:contentDescription="@string/todo"
+      android:layout_marginStart="70dp" />
+
+  <TextView
+    android:layout_width="185dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dip"
+      android:layout_marginLeft="120dp"
+      android:layout_marginBottom="10dp"
+      android:textColor="@color/light"
+      android:textSize="24dip"
+    android:textStyle="bold"
+    android:text="@string/short_app_name" />
+  </LinearLayout>
+
+  <ImageView
+      android:layout_width="214dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="70dp"
+      android:src="@drawable/hbarpurple"
+      android:contentDescription="@string/todo"
+      android:layout_marginStart="70dp" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="16dip"
+    android:textSize="16dip"
+    android:text="Version 0.1.1" />
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="16dip"
+    android:textSize="20dip"
+    android:text="Copyright \u00a9 2020 " />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16dip"
+      android:textSize="20dip"
+      android:text="Kairu Angela Wanjiru  656995" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:paddingTop="16dip"
+      android:textSize="15dip"
+      android:text="angelakairu22@gmail.com" />
+
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="16dip"
+    android:textSize="16dip"
+    android:text="This is the DFMA App" />
+
+  <TextView
+    android:id="@+id/alarms_created_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="16dip"
+    android:textSize="16dip"
+    android:text="..." />
+
+  <ImageView
+      android:layout_width="214dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="70dp"
+      android:src="@drawable/hbarpurple"
+      android:contentDescription="@string/todo"
+      android:layout_marginStart="70dp" />
+
+
+</LinearLayout>
+
